@@ -1,0 +1,293 @@
+
+p{
+    margin: 0;
+
+}
+a{
+    text-decoration: none;
+    color: #000000;
+
+}
+
+a:hover{
+    color:red;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+
+li{
+    list-style: none;
+
+    padding:0 10px;
+    margin:0 5px;
+}
+ 
+/* Начало Блока Навигации */
+.navbar{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.navbarCity{
+    height: 50px;
+    width: 400px;
+}
+
+
+
+.navbarSettings{
+    height: 50px;
+    width: auto;
+    display: flex;
+
+}
+.back_img_city{
+    background: url('../img/download.svg');
+    top: 24px;
+    left: 44px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    padding: 0;
+}
+
+.back_img_city:hover{
+    background: none;
+    -webkit-mask-image: url('../img/download.svg');
+    background-color: red;
+    -webkit-mask-position-x: 16px;
+    -webkit-mask-position-y: 32px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    padding: 0;
+    color: red;
+}
+
+.notice{
+    width: 10px;
+}
+.notice ul{
+    visibility: hidden;
+    
+}
+
+.notice:hover ul{
+    visibility: visible;
+    top: 58px;
+    left: 1460px;
+    position: absolute;
+}
+
+.logIn ul{
+    background: #f8d397;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logIn li{
+    margin: 5px 0;
+}
+/* Конец Блока Навигации */
+
+/* начало Главного Блока */
+
+.main_container{
+    max-width: 900px;
+    height: 500px;
+    margin: 10px auto;
+}
+
+.news_container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.news .titles a{
+    color: blue;
+    padding-right: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 0.5;
+}
+.news{
+    width: 600px;
+    height: 150px 0;
+    padding: 10px 0;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.more_news{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.more_news a{
+    margin-top: 10px;
+}
+
+.money{
+    display: flex;
+    position: relative;
+}
+
+.money_item{
+    display: flex;
+    margin-left: 0;
+    font-size: 16px;
+}
+
+.money_item p{
+    margin: 0 10px 0 5px;
+}
+
+.money-item:hover:after {
+    content:attr(data-title);
+    position: absolute;
+    z-index: 1;
+    visibility: visible;
+    background:rgba(13, 12, 12, 0.91);
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    left: -65px;
+    right: 0;
+    bottom: -53px;
+    width: 138px;
+    font-size: 13px;
+    padding: 8px;
+    text-align: center;
+
+
+}
+
+.advertisement{
+    width: 294px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* margin: 20px; */
+}
+
+.main_search{
+    width: 880px;
+    height: 100px;
+    /* margin: 10px auto; */
+}
+
+ul.tabs{
+    display: flex;
+    margin: 10px 0;
+    padding: 0;
+}
+
+ul.tabs a{
+    font-size: 16px;
+    color: #0054b9;
+}
+
+.input_search{
+    border: 2px solid #FFCC00;
+    width: 874px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+input{
+    width: 728px;
+    height: 36px;
+}
+.btn_search{
+    width:88px;
+    height:auto;
+    padding:10px auto;
+    background: #FFCC00;
+
+}
+
+.example_search{
+    display: flex;
+    justify-content: space-between;
+}
+
+.advertisement_long{
+    width: 708px;
+    height: 92px;
+    margin: 18px auto;
+    background: #f11818d3;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.advertisement_long a{
+    margin: 5px auto;
+}
+/* Конец Главного Блока */
+
+/* Начало Блока Информации */
+.info_wall{
+    max-width: 900px;
+
+    height: 350px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+    justify-content: flex-start;
+}
+
+.info_wall h1{
+    font-size: 18px;
+    color: blue;
+    text-align: center;
+}
+
+.info_wall a{
+    margin: 5px;
+
+}
+
+.weather,.traffiс,.moscow_map,.top,.tv_programm,.online{
+    width: 250px;
+    height: 150px;
+    background: #ebbfbf;
+    margin: 10px;
+}
+
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px;
+}
+
+
+
+
+
+.titles a{
+    background: none;
+
+}
