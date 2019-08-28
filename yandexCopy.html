@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="yandexCopyStyles.css">
+    <link rel="stylesheet" href="css/yandexCopyStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="script.js"></script>
     <title>YandexCopy</title>
 </head>
 <body>
     <div class="container">
-        <div class="navbar">
+        <div class="header">
             <div class="navbar">
                 <div class="navbarCity">
                 <ul>
@@ -21,9 +24,9 @@
                 </div>
                 <div class="navbarSettings">
                 <ul>
-                    <li><a href="#" class="back_img_settings">Будь в Плюсе </a></li>
-                    <li><a href="#" data-title="Коллекции"></a></li>
-                    <li class="notice"><a href="#" data-title="Уведомление">У</a><ul>
+                    <li><a href="#" style="padding-right:15px" >  Будь в Плюсе <span class="back_img_settings"></span> </a></li>
+                    <li><a href="#" data-title="Коллекции" class="colections"></a></li>
+                    <li class="notice"><a href="#" data-title="Уведомление"  > <span class='notice_bell'></span> </a><ul>
                                     <li> <a href="#">Все</a> </li>
                                     <li> <a href="#">М</a> </li>
                                     <li> <a href="#">О</a> </li>
@@ -36,15 +39,19 @@
                 </div>
             </div>
             <div class="logIn">
-                    <ul>
-                        <li><a href="#" class="my_log">nowa.mir</a></li>
-                        <li><a href="#">Почта 0000</a></li>
-                        <li><a href="#">Написать письмо</a></li>
-                        <li><a href="#">Деньги 0р</a></li>
-                        <li><a href="#">диск</a></li>
-                        <li><a href="#">Получить Плюс</a></li>
-                        <li><a href="#"class="icon_arrow">icon.Arrow</a></li>
-                    </ul>
+                <div class="my_log">
+                        <a href="#" class="log"> <span style="color:red;">n</span>owa.mir  </a> 
+                        <a href="#" class="small_box">Почта 0000<span class="icon_arrow_down"></span></a>
+                        
+                
+                    <div class="my_log_more">
+                            <img class="avatar" src="img/img.jpeg" alt="">
+                            <a href="#">Написать письмо</a>
+                            <a href="#">Деньги 0р</a>
+                            <a href="#">Диск</a>
+                            <a href="#" class="get_plus">Получить Плюс <span class="icon_arrow"></span> </a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="main_container">
@@ -56,11 +63,11 @@
                         <a href="" style="color:#999;font-size:13px;">августа, понедельник 14:14</a>
                     </div>
                     <div class="more_news">
-                        <a href="">Guardian: Трамп поссорился с лидерами G7 из-за России</a>
-                        <a href="">Путин уволил Яковенко с поста посла в Великобритании</a>
-                        <a href="">Вступил в силу второй пакет санкций против России по «делу Скрипалей»</a>
-                        <a href="">Два человека погибли при взрыве в жилом доме в Находке</a>
-                        <a href="">«Известия»: Норвегия хочет проверить Севморпуть на экологичность</a>
+                        <a href=""> <span class="more_news_img"></span> Guardian: Трамп поссорился с лидерами G7 из-за России</a>
+                        <a href=""><span class="more_news_img"></span>Путин уволил Яковенко с поста посла в Великобритании</a>
+                        <a href=""><span class="more_news_img"></span>Вступил в силу второй пакет санкций против России по «делу Скрипалей»</a>
+                        <a href=""><span class="more_news_img"></span>Два человека погибли при взрыве в жилом доме в Находке</a>
+                        <a href=""><span class="more_news_img"></span>«Известия»: Норвегия хочет проверить Севморпуть на экологичность</a>
                     </div>
                     <div class="money"> 
                        <div class="money_item" data-title="USD MOEXкурс MOEX на 26/08 15:21"><a href="" >USD MOEX</a><p>65,96 <span style="color:#999;">−0,02</span> </p></div> 
@@ -88,26 +95,29 @@
                         <li><a href="">ещё</a></li>
                     </ul>
                 </div>
+            
                 <form class="input_search" action="https://yandex.ru/search/touch/?" >
+                    <a href="" class="logo"><img src="img/logo.svg" alt=""></a>
                     <input type="search" name="text" >
-                    <a href="#">Г.В</a>
-                    <a href="#">К.</a>
-                    <button type="submit" class="btn_search">Найти</button>
+                    <a href="#"> <span class= "search_voice"></span> </a>
+                    <a href="#"> <span class=" search_tast"></span> </a>
+                    <button type="submit" class="btn_search btn_search_head" tabindex="-1"> <span class="btn_search_text">Найти</span> </button>
                 </form>
+
                 <div class="example_search">
                     <p>Найдётся всё. Например, <a href="#">Факел - Мордовия</a></p>
-                    <a href="#">Установите быстрый браузер</a>
+                    <a href="#"> <span class="speed_site"></span> Установите быстрый браузер</a>
                 </div>
             </div>
             <div class="advertisement_long">
-                <a href="#"> <h1>Здесь Может Быть Ваша Реклама</h1> </a>
+                <a href="#"> <h1>Это просто копия оригинальной страницы Yandexa.</h1> </a>
             </div>
         </div>
         <div class="info_wall">
             <div class="weather">
-                    <div class="titles"><a href="#"><h1>Погода</h1></a> </div>
+                    <div class="titles"><h1><a href="#">Погода</a></h1> </div>
                 <div class="items">
-                    <div class="tempriture"> <a href="#">+21</a> </div>
+                    <div class="tempriture"> <a href="#"> <span class="t_img"></span> +21</a> </div>
                     <div class="t_night_morning">
                         <a href="#">Ночью +19,</a>
                         <a href="#">утром + 22</a>
@@ -115,14 +125,15 @@
                 </div>
             </div>
             <div class="traffiс">
-                <div class="titles"><a href="#"><h1>Пробки</h1></a> </div>
-            <div class="items">
-                <div class="traffic_scale"> <a href="#">3</a> </div>
-                <div class="traffic_description"><a href="#"> До конца дня дороги свободны</a></div>
-            </div>
+                <div class="titles"><h1><a href="#">Пробки</a></h1> </div>
+                <div class="items" style="position:relative;display:flex;justify-content:flex-end;height:58px;">
+                     <a href="#" class="traffic_scale"><span class="traffic_img"></span> 3</a> 
+                     
+                    <a href="#" class="traffic_description">  Дороги свободны</a>
+                </div>
             </div>
             <div class="moscow_map">
-                    <div class="titles"> <a href=""><h1>Карта Москвы</h1></a> </div>
+                    <div class="titles"> <h1><a href="">Карта Москвы</a></h1> </div>
                 <div class="items">
                     <a href="#">Метро</a>
                     <a href="#">Такси</a>
@@ -131,15 +142,15 @@
                 </div>
             </div>
             <div class="top">
-                <div class="titles"><a href="#"> <h1>Посещаемое</h1></a></div> 
+                <div class="titles"><h1><a href="#"> Посещаемое</a></h1></div> 
                 <div class="items">
-                    <a href="">Маркет</a> - <a href="">люстры и светильники</a>
-                    <a href="">Недвижимость</a> - <a href="">динамика цен-2018</a>
-                    <a href="">Авто.ру</a> - <a href="">внедорожники до 6000000</a>
+                    <a href=""> <b>Маркет</b> </a> - <a href="">люстры и светильники</a>
+                    <a href=""> <b>Недвижимость</b> </a> - <a href="">динамика цен</a>
+                    <a href=""> <b>Авто.ру</b> </a> - <a href="">внедорожники до 6млн</a>
                 </div>
             </div>
             <div class="tv_programm">
-                    <div class="titles"><a href="#"> <h1>Посещаемое</h1></a></div>
+                    <div class="titles"><h1><a href="#"> Посещаемое</a><a href="#"> Эфир</a></h1></div>
                 <div class="items">
                    <p> 21:30 След  <a href="">Пятый канал</a></p>
                    <p> 21:30 Вести  <a href="">Россия 24</a></p>
@@ -147,17 +158,16 @@
                 </div>
             </div>
             <div class="online">
-                <div class="titles"> <a href="#"> <h1>Эфир</h1></a><a href="#"> <h1>Фильмы</h1></a><a href="#"> <h1>Сериалы</h1></a></div>
+                <div class="titles"> <h1> <a href="#"> Фильмы</a><a href="#"> Сериалы</a></h1></div>
                 <div class="items">
-                   <p> <a href="">p</a>  <a href="">Секретная <span>Звезда</span> </a></p>
-                   <p> <a href="">p</a>  <a href="">Кастинг ведущих <span>Дождь</span></a></p>
-                   <p> <a href="">p</a>  <a href="">ЧЭЗ <span>РБК</span></a></p> 
+                   <p> <a href="" class="play"></a>  <a href="">Секретная <span>Звезда</span> </a></p>
+                   <p> <a href="" class="play"></a>  <a href="">Кастинг ведущих <span>Дождь</span></a></p>
+                   <p> <a href="" class="play"></a>  <a href="">ЧЭЗ <span>РБК</span></a></p> 
                 </div>
             </div>
         </div>
-
-
-
     </div>
+
+
 </body>
 </html>
